@@ -11,8 +11,8 @@ export default {
   entry: {
     vendor: path.resolve(__dirname, 'src/vendor'),
     app: path.resolve(__dirname, 'src/app.js'),
-    views:path.resolve(__dirname, 'src/views'),
     main: path.resolve(__dirname, 'src/index')
+
   },
   target: 'web',
   output: {
