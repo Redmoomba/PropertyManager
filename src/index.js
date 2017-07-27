@@ -1,5 +1,11 @@
 /* eslint-disable no-console */
-import './index.css';
+import './css/index.css';
+import './css/bootstrap-grid.min.css';
+import './css/bootstrap-reboot.min.css'
+import './css/bootstrap.min.css'
+import './css/properties-homepage.css'
+
+
 
 
 import {getUsers, deleteUser} from './api/usersApi.js';
