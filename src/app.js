@@ -1,20 +1,18 @@
 angular.module('app', ['ui.router']);
 
+import homeTemplate from './views/home.html'
+
+
+
 //configure our routes
 angular.module('app').config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
-
-    var mainState = {
-        name: 'main',
+    var homeState = {
+        name: 'home',
         url: '/',
-        templateUrl: `../src/views/main.html`
+        template: homeTemplate
 
     };
 
-    $stateProvider.state(mainState);
+    $stateProvider.state(homeState);
 });
-
-export function Test(){
-
-}
-

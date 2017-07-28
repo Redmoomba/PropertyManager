@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-import './css/index.css';
-import './css/bootstrap-grid.min.css';
+import './css/index.css'
+import './css/bootstrap-grid.min.css'
 import './css/bootstrap-reboot.min.css'
 import './css/bootstrap.min.css'
 import './css/properties-homepage.css'
@@ -25,7 +25,6 @@ getUsers().then(result => {
       <td>${user.email}</td>
     </tr>`
   });
-  console.log(usersBody);
   global.document.getElementById('users').innerHTML = usersBody;
 
 
