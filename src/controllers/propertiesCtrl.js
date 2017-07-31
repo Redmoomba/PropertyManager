@@ -1,4 +1,5 @@
-function propertiesCtrl() {
+export class propertiesCtrl {
+constructor() {
     this.properties = [{
         name: 'Calera House',
         type: 'House',
@@ -40,8 +41,5 @@ function propertiesCtrl() {
         zip: '36542',
         rentAmount: '150'
     }];
+  }
 }
-
-
-
-angular.module('app').controller('PropertiesCtrl', propertiesCtrl);

@@ -14,7 +14,7 @@ describe('index.html', function(){
     const index = fs.readFileSync('./src/index.html', "utf-8");
     jsdom.env(index, function(err,window){
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal("Users");
+      expect(h1.innerHTML).to.equal("GPM");
       done();
       window.close();
     });

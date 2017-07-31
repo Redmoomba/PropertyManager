@@ -1,6 +1,7 @@
 angular.module('app', ['ui.router']);
 
-import homeTemplate from './views/home.html'
+import homeTemplate from './views/home.html';
+import { propertiesCtrl }  from './controllers/propertiesCtrl.js';
 
 
 
@@ -15,4 +16,10 @@ angular.module('app').config(function ($stateProvider, $urlRouterProvider) {
     };
 
     $stateProvider.state(homeState);
-});
+})
+.controller('PropertiesCtrl', propertiesCtrl);
+
+
+//import componentCtrl  from './components/propertyComponentController.js'
+
+

@@ -61,7 +61,13 @@ export default {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
       {test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap')},
-      {test: /\.html$/, loader: 'raw-loader'}
+      {test: /\.html$/, loader: 'raw-loader'},
+      {test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+            'file-loader'
+        ]
+      },
+
     ]
   }
 }

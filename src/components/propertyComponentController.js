@@ -2,7 +2,7 @@ function propertiesComponentController() {
 
 }
 
-const propertyComponent = {
+export const propertyComponent = {
     controller: propertiesComponentController,
     bindings: {
         itemProperty: `<` // two way binding
